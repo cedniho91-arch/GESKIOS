@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-primary: #6750A4;
+  --color-on-primary: #FFFFFF;
+  --color-primary-container: #EADDFF;
+  --color-on-primary-container: #21005D;
+  
+  --color-secondary: #625B71;
+  --color-on-secondary: #FFFFFF;
+  --color-secondary-container: #E8DEF8;
+  --color-on-secondary-container: #1D192B;
+  
+  --color-surface: #FEF7FF;
+  --color-on-surface: #1D1B20;
+  --color-surface-variant: #E7E0EB;
+  --color-on-surface-variant: #49454F;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-sans;
+  }
+}
+
+.card-m3 {
+  @apply bg-surface-variant/30 border border-surface-variant rounded-2xl p-4 transition-all hover:shadow-md;
+}
+
+.btn-primary-m3 {
+  @apply bg-primary text-on-primary px-6 py-3 rounded-full font-medium transition-all hover:shadow-lg active:scale-95 disabled:opacity-50;
+}
+
+.btn-secondary-m3 {
+  @apply bg-secondary-container text-on-secondary-container px-6 py-3 rounded-full font-medium transition-all hover:shadow-md active:scale-95;
+}

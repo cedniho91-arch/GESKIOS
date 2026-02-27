@@ -1,0 +1,5 @@
+{
+  "name": "RestoPOS Pro",
+  "description": "Système de gestion de restaurant complet avec ventes, charges, bilan dynamique et impression de tickets.",
+  "requestFramePermissions": []
+}
